@@ -10,8 +10,10 @@ def insertion_sort(A):
 
         A[j + 1] = key
     return A
-# Testing the code
-numbers = [5,2,9,1,5,1]
-print("Original array:", numbers)
-insertion_sort(numbers)
-print("Sorted array in decreasing order are :", numbers)
+
+# Asking user input to sort the numbers in decreasing order     
+user_input = input("Enter numbers separated by spaces: ")
+A = list(map(int, user_input.strip().split()))
+print("Original array:", A)
+insertion_sort(A)
+print("Sorted numbers in decreasing order:", A)
